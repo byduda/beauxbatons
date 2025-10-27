@@ -78,7 +78,7 @@ main {
 	opacity: 0.8; 
 	background:  var(--cor-quarternaria);
 	padding: 20px 50px 20px 50px; 
-	width:50%; 
+	width:600px; 
 	border: 5px solid var(--cor-primaria);
 	margin: auto;
 }
@@ -89,7 +89,7 @@ nav {
     opacity: 0.8;
 	border-top: 5px solid var(--cor-primaria);
 	border-bottom: 5px solid var(--cor-primaria);
-    width: 13%; 
+    width: 150px; 
     padding: 10px 0; 
     margin: 30px auto;
 }
