@@ -1,8 +1,25 @@
-#header-in { clear: both; padding: 0; opacity: 0.8;}
-::-webkit-scrollbar {width: 14px; height: 14px opacity: 0.8; }
-::-webkit-scrollbar-track-piece {background-color: #626262;  : 0.8; }
-::-webkit-scrollbar-thumb:vertical {height: 6px; opacity: 0.8; background-color: #000000; }
-::-webkit-scrollbar-thumb:horizontal {width: 6px; opacity: 0.8; background-color: #000000; }
+/*barra de rolagem*/
+::-webkit-scrollbar {
+	width: 14px;
+	height: 14px opacity: 0.8; 
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: var(--cor-tercearia);
+	opacity: 0.8;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 6px; 
+	opacity: 0.8; 
+	background-color: var(--cor-primaria);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 6px; 
+	opacity: 0.8; 
+	background-color: var(--cor-primaria);
+}
 
 /*fontes*/
 @font-face {
@@ -32,11 +49,26 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../assets/fonts/SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*variaveis*/
+:root {
+	--cor-primaria: #0c0c0c;
+	--cor-secundaria: #2a2a2a;
+	--cor-tercearia: #999999;
+	--cor-quarternaria: #f0f0f0;
+	--cor-quintenaria: #666c70;
+	--cor-sextenaria: #c0c0c0;
+}
  
 /*fundo*/
 body {
-	font-family: Quicksand, Helvetica, sans-serif;
-	font-size: 13px;
 	background: url(http://www.hitskin.com/themes/16/13/53/i_background.png) fixed center top; 
 	margin-bottom: 2%;
 }
@@ -44,10 +76,10 @@ body {
 /*conteúdo*/
 main {
 	opacity: 0.8; 
-	background: #f0f0f0; 
-	padding: 20px 50px 50px 50px; 
-	width:50%; 
-	border: 5px solid #0c0c0c;
+	background:  var(--cor-quarternaria);
+	padding: 20px 50px 20px 50px; 
+	width:600px; 
+	border: 5px solid var(--cor-primaria);
 	margin: auto;
 }
 
@@ -55,9 +87,9 @@ main {
 nav { 
     background: #000000; 
     opacity: 0.8;
-	border-top: 5px solid #0c0c0c;
-	border-bottom: 5px solid #0c0c0c; 
-    width: 13%; 
+	border-top: 5px solid var(--cor-primaria);
+	border-bottom: 5px solid var(--cor-primaria);
+    width: 150px; 
     padding: 10px 0; 
     margin: 30px auto;
 }
@@ -66,7 +98,7 @@ nav {
 nav ul li a {
     display: block;
     font-family: "Poiret One", sans-serif; 
-    color: #999999;
+    color: var(--cor-tercearia);
     text-transform: none; 
     font-size: 20px; 
 	text-decoration: none;
@@ -78,7 +110,7 @@ nav ul li a {
 
 nav ul li.active a, 
 nav ul li a:hover {
-	color: #fff;
+	color: var(--cor-quarternaria);
 }
 
 nav ul { 
@@ -119,12 +151,12 @@ nav ul li:hover > .submenu {
 .submenu li a {
     font-family: "Poiret One", sans-serif; 
     font-size: 16px; 
-    color: #999999; 
-    background: #000; 
-    border-bottom: 1px solid #0c0c0c;
+    color: var(--cor-tercearia); 
+    background: var(--cor-primaria); 
+    border-bottom: 1px solid var(--cor-primaria);
     width: auto; 
 	min-height: auto;
-	text-shadow: #000 0.1em 0.1em 0.2em;
+	text-shadow: var(--cor-primaria) 0.1em 0.1em 0.2em;
     padding: 10px 15px; 
     display: block; 
     margin: 0; 
@@ -137,28 +169,38 @@ nav ul li:hover > .submenu {
 img.banner {
 	width: 100%;
 	height: 150px;
-	border-top: solid 5px #2a2a2a;
-	border-bottom: solid 5px #2a2a2a;
-	display: block; /* Define o elemento como um bloco */
+	border-top: solid 5px var(--cor-secundaria);
+	border-bottom: solid 5px var(--cor-secundaria);
+	display: block;
 	margin-left: auto;
     margin-right: auto;
+	object-fit: cover;
 }
 
 img.cards {
 	width: 100%;
 	height: 150px;
-	border: solid 1px #c0c0c0;
+	border: solid 1px var(--cor-sextenaria);
 	display: block;
 	margin-left: auto;
     margin-right: auto;
 	padding: 1px;
 }
 
+img.badge {
+	width: 8%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+
 /*divisória horizontal rule*/
 hr {
 	border: 0;
 	height: 0.5px;
-	background: #666c70;
+	background: var(--cor-quintenaria);
 	margin: 20px auto;
 }
 
@@ -167,9 +209,9 @@ h1 {
 	font-family: 'Miss Fajardose', sans-serif;
 	font-size: 60px;
     font-weight: 100;
-    color: #3f3f3f;
+    color: var(--cor-secundaria);
 	text-align: center;
-    border-bottom: 10px solid #0c0c0c;
+    border-bottom: 10px solid var(--cor-primaria);
 	line-height: 1.1;
 	margin: 0px 0px 10px;
 }
@@ -178,24 +220,35 @@ h1 {
 h2 {
 	font-family:'Raleway';
 	font-size:15px;
-	color:#000;
+	color:var(--cor-primaria);
 	text-align: center;
 	text-transform:uppercase;
 	letter-spacing:5px;
 }
 
+/*subtítulo*/
+h3 {
+	font-family:'Segoe UI';
+	font-size:8px;
+	color:var(--cor-primaria);
+	text-align: center;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+/*paragrafo*/
 p {
 	font-family:'Quicksand';
 	font-size:14px;
-	color: #2a2a2a;
+	color: var(--cor-secundaria);
 	text-align: justify;
 	margin: -2px 0px;
 	line-height: 16px;
 }
 
-.colunas {
+.coluna {
 	display: grid;
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 5fr 5fr;
     gap: 15px;
 	width: 100%;
 }
