@@ -24,35 +24,35 @@
 /*fontes*/
 @font-face {
 	font-family: 'Poiret One';
-	src: url('../assets/fonts/PoiretOne.ttf') format('truetype');
+	src: url('./assets/fonts/PoiretOne.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Miss Fajardose';
-	src: url('../assets/fonts/MissFajardose.ttf') format('truetype');
+	src: url('./assets/fonts/MissFajardose.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('../assets/fonts/Raleway.ttf') format('truetype');
+	src: url('./assets/fonts/Raleway.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Quicksand';
-	src: url('../assets/fonts/Raleway.ttf') format('truetype');
+	src: url('./assets/fonts/Raleway.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: url('../assets/fonts/SegoeUI.ttf') format('truetype');
+	src: url('./assets/fonts/SegoeUI.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
