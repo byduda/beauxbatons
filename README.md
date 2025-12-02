@@ -12,7 +12,7 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⠧⠼⠿⠛⠀⠘⠿⢤⣤⣤⡤⠟⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-Este blog é uma recriação puramente para fins de estudo e prática de desenvolvimento web (HTML, CSS), inspirada na estética da Academia de Magia Beauxbatons da série Harry Potter.
+Este template é uma recriação puramente para fins de estudo e prática de desenvolvimento web (HTML, CSS), inspirada na estética da Academia de Magia Beauxbatons da série Harry Potter.
 
 Criação Original:
 - Livros: A série de livros e filmes Harry Potter, criada por J.K. Rowling.
